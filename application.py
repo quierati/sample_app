@@ -117,7 +117,7 @@ welcome = """
 <body id="sample">
   <div class="textColumn">
     <h1>Congratulations</h1>
-    <p>You have successfully updated your AWS Elastic Beanstalk environment using BitBucket Pipelines!</p>
+    <p>You have successfully updated your AWS Elastic Beanstalk environment using AWS CodePipeline! v3</p>
   </div>
 
   <div class="linksColumn">
