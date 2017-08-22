@@ -6,4 +6,4 @@ EXPOSE 8000
 ADD . /opt/app
 WORKDIR /opt/app
 
-CMD python3 -m http.server 8000
+CMD ["python3", "application_v2.py"]
