@@ -1,0 +1,30 @@
+{
+  "AWSEBDockerrunVersion": 1,
+  "volumes": [
+    {
+      "name": "sample_app",
+      "host": {
+        "sourcePath": "/opt/app"
+      }
+    }
+  ],
+  "containerDefinitions": [
+    {
+      "name": "sample_app",
+      "essential": true,
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 8000
+        }
+      ]
+    }
+  ],
+  "Volumes": [
+    {
+      "HostDirectory": "/var/log/sample_app",
+      "ContainerDirectory": "/opt/app/log"
+    }
+  ]
+}
+
